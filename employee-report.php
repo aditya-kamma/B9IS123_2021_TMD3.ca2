@@ -1,6 +1,21 @@
 <?php 
-	
+	include_once("includes/header.php"); 
+	include_once("includes/db_connect.php"); 
+	$SQL="SELECT * FROM employee";
+	$rs=mysql_query($SQL) or die(mysql_error());
+	global $SERVER_PATH;
 ?>
+<script>
+function delete_employee(employee_id)
+{
+	if(confirm("Do you want to delete the employee?"))
+	{
+		this.document.frm_employee.employee_id.value=employee_id;
+		this.document.frm_employee.act.value="delete_employee";
+		this.document.frm_employee.submit();
+	}
+}
+</script>
 	<div class="crumb">
     </div>
     <div class="clear"></div>
@@ -43,4 +58,4 @@
 		</div>
 		</div>
 	</div>
-< ?> 
+<?php include_once("includes/footer.php"); ?> 
