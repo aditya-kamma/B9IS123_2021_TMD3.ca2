@@ -1,5 +1,11 @@
 <?php 
-	
+	include_once("includes/header.php"); 
+	if($_REQUEST[car_id])
+	{
+		$SQL="SELECT * FROM car WHERE car_id = $_REQUEST[car_id]";
+		$rs=mysql_query($SQL) or die(mysql_error());
+		$data=mysql_fetch_assoc($rs);
+	}
 ?> 
 	<div class="crumb">
     </div>
