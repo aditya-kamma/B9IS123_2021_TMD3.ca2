@@ -1,4 +1,7 @@
 <?php 
+include_once("includes/header.php"); 
+include_once("includes/db_connect.php"); 
+global $SERVER_PATH;
 ?> 
 	<div id="banner">
     	<div class="left">
@@ -27,4 +30,4 @@ Employees are the pillar of any organization and an ideal employee management to
   </div>
   <div class="clear"></div>
 </div>
-<?php  ?> 
+<?php include_once("includes/footer.php"); ?> 
