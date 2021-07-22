@@ -1,11 +1,5 @@
 <?php  ?> 
-	<div class="crumb">
-    	<p>You are Here:</p>
-        <ul>
-        	<li class="first"><a href="#">Home</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </div>
+	
     <div class="clear"></div>
 	<div id="content_sec">
 		<div class="col1">
