@@ -1,5 +1,5 @@
 <?php 
-	include_once("includes/header.php"); 
+include_once("includes/header.php"); 
 	if($_REQUEST[car_id])
 	{
 		$SQL="SELECT * FROM car WHERE car_id = $_REQUEST[car_id]";
@@ -28,11 +28,11 @@
 						<ul class="forms">
 							<li class="txt">&nbsp;</li>
 							<li class="textfield"><input type="submit" value="Submit" class="simplebtn"></li>
-							<li class="textfield"><input type="reset" value="Reset" class="resetbtn"></li>
+							<!-- <li class="textfield"><input type="reset" value="Reset" class="resetbtn"></li> -->
 						</ul>
 						<input type="hidden" name="act" value="check_login">
 					</form>
-			</div>
+					</div>
 		</div>
 		<div class="col2">
 			<?php include_once("includes/sidebar.php"); ?> 
